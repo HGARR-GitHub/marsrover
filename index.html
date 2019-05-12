@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Mars Rover App</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+  
+    <!-- Bonus: Visualisation
+    Next iteration would be to create the board in JS, for example using cloneNode per row
+    I have to think what is best. Especially creating an unique id is important to be
+    able to map the posX and posY in the array with the board-->
+    
+    <div id="board">
+      <div class="row">
+        <div id="b0-0" class="field"></div>
+        <div id="b0-1" class="field"></div>
+        <div id="b0-2" class="field"></div>
+        <div id="b0-3" class="field"></div>
+        <div id="b0-4" class="field"></div>
+        <div id="b0-5" class="field"></div>
+        <div id="b0-6" class="field"></div>
+        <div id="b0-7" class="field"></div>
+        <div id="b0-8" class="field"></div>
+        <div id="b0-9" class="field"></div>
+        <div class="clear"></div>
+      </div>
+      <div class="row">
+        <div id="b1-0" class="field"></div>
+        <div id="b1-1" class="field"></div>
+        <div id="b1-2" class="field"></div>
+        <div id="b1-3" class="field"></div>
+        <div id="b1-4" class="field"></div>
+        <div id="b1-5" class="field"></div>
+        <div id="b1-6" class="field"></div>
+        <div id="b1-7" class="field"></div>
+        <div id="b1-8" class="field"></div>
+        <div id="b1-9" class="field"></div>
+        <div class="clear"></div>
+      </div>
+      <div class="row">
+        <div id="b2-0" class="field"></div>
+        <div id="b2-1" class="field"></div>
+        <div id="b2-2" class="field"></div>
+        <div id="b2-3" class="field"></div>
+        <div id="b2-4" class="field"></div>
+        <div id="b2-5" class="field"></div>
+        <div id="b2-6" class="field"></div>
+        <div id="b2-7" class="field"></div>
+        <div id="b2-8" class="field"></div>
+        <div id="b2-9" class="field"></div>
+        <div class="clear"></div>
+      </div>
+      <div class="row">
+        <div id="b3-0" class="field"></div>
+        <div id="b3-1" class="field"></div>
+        <div id="b3-2" class="field"></div>
+        <div id="b3-3" class="field"></div>
+        <div id="b3-4" class="field"></div>
+        <div id="b3-5" class="field"></div>
+        <div id="b3-6" class="field"></div>
+        <div id="b3-7" class="field"></div>
+        <div id="b3-8" class="field"></div>
+        <div id="b3-9" class="field"></div>
+        <div class="clear"></div>
+      </div>
+      <div class="row">
+        <div id="b4-0" class="field"></div>
+        <div id="b4-1" class="field"></div>
+        <div id="b4-2" class="field"></div>
+        <div id="b4-3" class="field"></div>
+        <div id="b4-4" class="field"></div>
+        <div id="b4-5" class="field"></div>
+        <div id="b4-6" class="field"></div>
+        <div id="b4-7" class="field"></div>
+        <div id="b4-8" class="field"></div>
+        <div id="b4-9" class="field"></div>
+        <div class="clear"></div>
+      </div>
+      <div class="row">
+        <div id="b5-0" class="field"></div>
+        <div id="b5-1" class="field"></div>
+        <div id="b5-2" class="field"></div>
+        <div id="b5-3" class="field"></div>
+        <div id="b5-4" class="field"></div>
+        <div id="b5-5" class="field"></div>
+        <div id="b5-6" class="field"></div>
+        <div id="b5-7" class="field"></div>
+        <div id="b5-8" class="field"></div>
+        <div id="b5-9" class="field"></div>
+        <div class="clear"></div>
+      </div>
+      <div class="row">
+        <div id="b6-0" class="field"></div>
+        <div id="b6-1" class="field"></div>
+        <div id="b6-2" class="field"></div>
+        <div id="b6-3" class="field"></div>
+        <div id="b6-4" class="field"></div>
+        <div id="b6-5" class="field"></div>
+        <div id="b6-6" class="field"></div>
+        <div id="b6-7" class="field"></div>
+        <div id="b6-8" class="field"></div>
+        <div id="b6-9" class="field"></div>
+        <div class="clear"></div>
+      </div>
+      <div class="row">
+        <div id="b7-0" class="field"></div>
+        <div id="b7-1" class="field"></div>
+        <div id="b7-2" class="field"></div>
+        <div id="b7-3" class="field"></div>
+        <div id="b7-4" class="field"></div>
+        <div id="b7-5" class="field"></div>
+        <div id="b7-6" class="field"></div>
+        <div id="b7-7" class="field"></div>
+        <div id="b7-8" class="field"></div>
+        <div id="b7-9" class="field"></div>
+        <div class="clear"></div>
+      </div>
+      <div class="row">
+        <div id="b8-0" class="field"></div>
+        <div id="b8-1" class="field"></div>
+        <div id="b8-2" class="field"></div>
+        <div id="b8-3" class="field"></div>
+        <div id="b8-4" class="field"></div>
+        <div id="b8-5" class="field"></div>
+        <div id="b8-6" class="field"></div>
+        <div id="b8-7" class="field"></div>
+        <div id="b8-8" class="field"></div>
+        <div id="b8-9" class="field"></div>
+        <div class="clear"></div>
+      </div>
+      <div class="row">
+        <div id="b9-0" class="field"></div>
+        <div id="b9-1" class="field"></div>
+        <div id="b9-2" class="field"></div>
+        <div id="b9-3" class="field"></div>
+        <div id="b9-4" class="field"></div>
+        <div id="b9-5" class="field"></div>
+        <div id="b9-6" class="field"></div>
+        <div id="b9-7" class="field"></div>
+        <div id="b9-8" class="field"></div>
+        <div id="b9-9" class="field"></div>
+        <div class="clear"></div>
+      </div>
+    </div>
+
+
+    <script src="app.js"></script>
+  </body>
+</html>

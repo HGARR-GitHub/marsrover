@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+#board {
+  margin:auto;
+  width:400px;
+  border: none;
+  margin-top:20px;
+  
+}
+
+
+
+.field {
+  width: 39px;
+  height: 39px;
+  border: 1px solid rgb(71, 68, 68);
+  margin: 0;
+  float: left;
+  background-size: cover;
+  
+}
+
+.clear{
+  clear:both;
+}
+
+.card{
+  min-width:200px;
+  
+}
+
+.infocard #imageobject{
+  background-size: cover;
+  background-image: url("images/rover.svg");
+  
+  width:100px;
+  height:100px;
+}
