@@ -9,7 +9,7 @@ let marsobjects = []  //contains all rovers and rocks
 
 let counter = 0
 
-document.onload = main
+window.onload = main
 
 
 function main(){
