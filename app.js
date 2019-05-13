@@ -1,18 +1,11 @@
-/*
-
-
-
-*/
-
-
 const maxBoardX = 9  //from 0 to 9
 const maxBoardY = 9
-const imageDir = "images/"
 const maxMoves = 15
+const imageDir = "images/"
 const listOfMoves = ["l","l","f","f","f","r","r","b","b","b"]
 let rovers = []
 let stones = []
-let marsobjects = []
+let marsobjects = []  //contains all rovers and rocks 
 
 let counter = 0
 
@@ -88,14 +81,14 @@ function main(){
 function initBoard(){
 
   //show all rocks
-  displayRocksBoard()
+  displayRocks()
 
   //show all rovers in begin position
   displayAllRoversBoard()
 
 }
 
-function displayRocksBoard(){
+function displayRocks(){
 
   let currentElemId = ""
   let currentElem = ""
@@ -179,7 +172,6 @@ function moveRovers(){
 
   
   let nextMove = ""
-  let tlog = []
 
   for (let i = 0; i < marsobjects.length; i++){
     
@@ -254,7 +246,7 @@ function checkcollision(rover){
   }
 
 
-  //2. Check for an object (Rock or Another rover)
+  //2. and 3. Check for an object (Rock or Another rover)
   for (let i = 0; i < marsobjects.length; i++){
     //only check the objects that are not equal to the rover that is moving.
     if (rover.id != marsobjects[i].id){

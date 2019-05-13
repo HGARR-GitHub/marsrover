@@ -28,16 +28,3 @@
 .clear{
   clear:both;
 }
-
-.card{
-  min-width:200px;
-  
-}
-
-.infocard #imageobject{
-  background-size: cover;
-  background-image: url("images/rover.svg");
-  
-  width:100px;
-  height:100px;
-}
